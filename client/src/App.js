@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
+import { useDispatch } from 'react-redux'
 
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
