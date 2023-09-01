@@ -11,11 +11,11 @@ const Posts = () => {
   console.log(posts)
 
   return (
-    <>
-      <h1>Posts</h1>
-      <Post />
-      <Post />
-    </>
+    !posts.length ? <CircularProgress /> : (
+      <Grid className={classes.container}>
+
+      </Grid>
+    )
   )
 }
 
