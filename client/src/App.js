@@ -6,8 +6,6 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 
-
-
 const App = () => {
 
   return (
@@ -15,13 +13,12 @@ const App = () => {
       <Container maxWidth='lg'>
         <Navbar/>
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/auth" exact component={Auth} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/auth" element={<Auth/>} />
         </Routes>
-        <Home/>
       </Container>
   </BrowserRouter>
   )
 }
 
-export default App
+export default App;
