@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className={classes.brandContainer} >
                   <Typography  component={Link} to="/" variant='h2' align='center'>Memories</Typography>
                   <img className={classes.image} src={memories} alt='memories' height='60'/>
-            </div>
+            </div>  
     </AppBar>
   )
 }
