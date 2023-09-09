@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core';
+import { Avatar, Button, Paper, Grid, TextField, Typography, Container } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
 
@@ -27,8 +27,12 @@ const Auth = () => {
                               {
                                     isSignup && (
                                           <>
+                                          <Grid xs={6} md={12}>
                                                 <TextField name="firstName" label="First Name" handleChange={handleChange} autoFocus xs={6} />
+                                          </Grid>
+                                          <Grid xs={6} md={12}>
                                                 <TextField name="firstName" label="First Name" handleChange={handleChange} autoFocus xs={6} />
+                                          </Grid>
                                           </>
                                     )
                               }
