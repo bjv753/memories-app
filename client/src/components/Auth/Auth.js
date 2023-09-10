@@ -29,7 +29,7 @@ const Auth = () => {
             handleShowPassword(false);
       }
 
-      const googleSuccess = async (res) => {
+      const googleSuccess = (res) => {
             const result = res?.profileObj;
             const token = res?.tokenId;
 
