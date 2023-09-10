@@ -12,7 +12,7 @@ const Auth = () => {
       const classes = useStyles();
       const [showPassword, setShowPassword] = useState(false)
       const [isSignup, setIsSignup] = useState(false);
-
+      const dispatch = useDispatch();
 
       const handleShowPassword = () => setShowPassword((prevShowPassword) => !prevShowPassword);
 
@@ -34,9 +34,9 @@ const Auth = () => {
             const token = res?.tokenId;
 
             try {
-                  
+                  dispatch({ type: 'AUTH', data: { result, token } })
             } catch (error) {
-                  
+                  console.log(error)
             }
       }
 
